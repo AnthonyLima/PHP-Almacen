@@ -26,6 +26,16 @@ switch($route) {
     case "productos/guardar":
         include_once("productos/guardar.php");
         break;
+    case "unidades/registrar":
+        $title = "unidades registrar";
+        include_once("unidades/editar.php");
+        $content = ob_get_contents();
+        break;
+    case "categorias/registrar":
+        $title = "categorias registrar";
+        include_once("categorias/editar.php");
+        $content = ob_get_contents();
+        break;
     default:
         $title = "Inicio";
         include_once("welcome.php");
