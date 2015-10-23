@@ -36,6 +36,9 @@ switch($route) {
         include_once("categorias/editar.php");
         $content = ob_get_contents();
         break;
+    case "unidades/guardar":
+        include_once("unidades/guardar.php");
+        break;
     default:
         $title = "Inicio";
         include_once("welcome.php");
